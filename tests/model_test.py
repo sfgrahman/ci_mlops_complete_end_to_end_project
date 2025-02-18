@@ -65,7 +65,7 @@ class TestModelLoading(unittest.TestCase):
         X_test = test_data.drop(columns=["Potability"])
         y_test = test_data["Potability"]
         
-        predictions = loaded_model.predcit(X_test)
+        predictions = loaded_model.predict(X_test)
         accuracy = accuracy_score(y_test, predictions)
         precision = precision_score(y_test, predictions, average="binary")
         recall = recall_score(y_test, predictions, average="binary")
