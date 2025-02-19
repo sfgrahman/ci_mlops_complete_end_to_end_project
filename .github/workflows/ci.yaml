@@ -55,5 +55,5 @@ jobs:
             - name: Push Docker Image
               if: ${{ success()}}
               run: |
-                docker push sfgrahman/water-potability-predictor:latest .
+                docker push sfgrahman/water-potability-predictor:latest
 
